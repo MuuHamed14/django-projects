@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title> Show_image </title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+</head>
+<body>
+<nav class="navbar navbar-dark bg-dark">
+  <!-- Navbar content -->
+</nav>
+
+<nav class="navbar navbar-dark bg-primary">
+  <!-- Navbar content -->
+</nav>
+
+<nav class="navbar navbar-light" style="background-color: #e3f2fd;">
+  <!-- Navbar content -->
+</nav>
+<form method="post" enctype="multipart/form-data">
+    {% csrf_token%}
+    {{f.as_p}}<br>
+    <input type="submit" value="Send-data">
+</form>
+<!-- Footer -->
+<footer class="page-footer font-small special-color-dark pt-4">
+
+  <!-- Footer Elements -->
+  <div class="container">
+
+    <!--Grid row-->
+    <div class="row">
+
+      <!--Grid column-->
+      <div class="col-md-6 mb-4">
+
+        <!-- Form -->
+        <form class="form-inline">
+          <input class="form-control form-control-sm mr-3 w-75" type="text" placeholder="Search"
+            aria-label="Search">
+          <i class="fas fa-search" aria-hidden="true"></i>
+        </form>
+        <!-- Form -->
+
+      </div>
+      <!--Grid column-->
+
+      <!--Grid column-->
+      <div class="col-md-6 mb-4">
+
+        <form class="input-group">
+          <input type="text" class="form-control form-control-sm" placeholder="Your email"
+            aria-label="Your email" aria-describedby="basic-addon2">
+          <div class="input-group-append">
+            <button class="btn btn-sm btn-outline-white my-0" type="button">Sign up</button>
+          </div>
+        </form>
+
+      </div>
+      <!--Grid column-->
+
+    </div>
+    <!--Grid row-->
+
+  </div>
+  <!-- Footer Elements -->
+
+  <!-- Copyright -->
+  <div class="footer-copyright text-center py-3">© 2020 Copyright:
+    <a href="https://mdbootstrap.com/"> MDBootstrap.com</a>
+  </div>
+  <!-- Copyright -->
+
+</footer>
+<!-- Footer -->
+</body>
+</html>

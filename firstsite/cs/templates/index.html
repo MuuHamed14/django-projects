@@ -1,0 +1,48 @@
+{% extends 'des.html' %}
+{% load static %}
+<html lang="en">
+<head>
+{% block des %}
+    <link href="{% static 'cs/css/base.css'%}" rel="stylesheet">
+    <meta charset="UTF-8">
+    <title> First_project </title>
+</head>
+<body>
+
+<h2> Welcome to Django </h2> <br>
+
+<!--- start url -->
+<a href="/p" target="_blank"> Click here to go page p</a><br><br>
+<a href="/p4/mohamed/14/2" target="_blank"> Click here to go page p4</a><br><br>
+<!---- end url --->
+
+first_name : {{first_name}}<br>
+last_name : {{last_name}}<br>
+age : {{age}}<br>
+list : {{list}}<br><br>
+
+{% for s in list %}
+{{s}}
+<br>
+{% endfor %}
+
+<br>
+
+<!--- start url with name -->
+<a href="{% url 'p2' 2 4 %}" target="_blank"> Click here to go page p</a><br><br>
+<a href="{% url 'p4' 'mohamed' 14 2%}" target="_blank"> Click here to go page p4</a><br><br>
+<!---- end url --->
+
+<!--- img --->
+<img src="{% static 'cs/images/y1.png'%}">
+<!--- end img--->
+
+<!--- start include ---->
+{% include 'include1.html'%}
+<!--- end include --->
+
+{% endblock %}
+
+
+</body>
+</html>

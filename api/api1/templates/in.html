@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title> Show_Api </title>
+</head>
+<body>
+<table border="2px">
+    {% for s in d %}
+    <tr>
+        <td>{{s.id}}</td>
+        <td>{{s.name}}</td>
+        <td>{{s.email}}</td>
+        <td>{{s.age}}</td>
+        <td>{{s.birthday}}</td>
+    </tr>
+    {% endfor %}
+</table>
+</body>
+</html>
